@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap");
+
+* {
+  font-family: "Bruno Ace SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 400px;
+  height: 400px;
+
+  background: rgb(238, 236, 174);
+  background: radial-gradient(
+    circle,
+    rgba(238, 236, 174, 1) 0%,
+    rgba(175, 148, 233, 1) 100%
+  );
+}
+
+.box span {
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.big {
+  font-size: 44px;
+  font-weight: 600;
+}
+
+.number-box {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 200px;
+  height: 65px;
+  margin-bottom: 25px;
+}
+
+.one,
+.zero {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.one {
+  width: 23px;
+  height: 85px;
+  background-color: #fff;
+  border-radius: 3px;
+  position: absolute;
+  z-index: 10;
+}
+
+.one-one {
+  transform: rotate(50deg);
+  width: 20px;
+  height: 33px;
+  left: 11px;
+  top: 3px;
+}
+
+.one-two {
+  left: 25px;
+  top: 2px;
+}
+
+.zero {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 23px solid #fff;
+  position: absolute;
+}
+
+.zero-one {
+  left: 40px;
+  z-index: 8;
+}
+
+.zero-two {
+  left: 110px;
+}
+
+.small-circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  top: 30px;
+  left: 80px;
+}
+
+.small-circle-two {
+  left: 150px;
+}
