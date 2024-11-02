@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap");
+
+* {
+  font-family: "Bruno Ace SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.frame {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 400px;
+  background-color: #ef6969;
+  border-radius: 4px;
+}
+
+.container {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 50%;
+
+  background-color: #ffffff;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flower-box {
+  width: 100px;
+  height: 100px;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+}
+
+.flower-box div {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+
+.flower-one {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #d14b4b;
+  z-index: 1;
+  position: relative;
+  transform: scale(0);
+}
+
+.flower-two {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background-color: #ef6969;
+  z-index: 2;
+  transform: scale(0);
+}
+
+.flower-three {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ff7f7f;
+  z-index: 3;
+  transform: scale(0);
+}
+
+.leaf-box {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.stalk {
+  width: 10px;
+  height: 0px;
+  background-color: rgba(52, 126, 94);
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  transform: translateX(-50%);
+}
+
+.leaf {
+  width: 0px;
+  height: 50px;
+}
+
+.right {
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 60px;
+  background: linear-gradient(90deg, rgb(52, 126, 94), rgb(87, 193, 119));
+}
+
+.left {
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 60px;
+  background: linear-gradient(90deg, rgb(87, 193, 119), rgb(52, 126, 94));
+}
