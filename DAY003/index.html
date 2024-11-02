@@ -3,17 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>day 2</title>
+    <title>day 3</title>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/MotionPathPlugin.min.js"></script>
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
-      <div class="line-box no-animation">
-        <div class="line line-1"></div>
-        <div class="line line-2"></div>
-        <div class="line line-3"></div>
+      <div class="bg">
+        <svg class="sky"></svg>
+        <div class="sun"></div>
+        <div class="pyramid">
+          <div class="py-shadow"></div>
+        </div>
+        <div class="land">
+          <div class="shadow"></div>
+        </div>
       </div>
     </div>
   </body>

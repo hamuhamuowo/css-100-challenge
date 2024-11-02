@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 400px;
+  background-color: #282828;
+  border-radius: 5px;
+}
+
+.bg {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background-color: rgb(142, 46, 194);
+  position: relative;
+  overflow: hidden;
+}
+
+.sky {
+  width: 100%;
+  height: 100%;
+}
+
+.star {
+  fill: #fff;
+  stroke: none;
+  stroke-width: 0;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+    rgba(255, 255, 255, 0.1) 0px 16px 56px,
+    rgba(255, 255, 255, 0.1) 0px 24px 80px;
+}
+
+.sun {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  bottom: 30px;
+  right: 0;
+  background-color: yellow;
+  position: absolute;
+}
+
+.land {
+  width: 200px;
+  height: 60px;
+  background-color: rgb(255, 204, 1);
+  position: absolute;
+  bottom: 0;
+}
+
+.shadow {
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  left: 40px;
+  border-top: 20px solid rgb(232, 187, 10);
+  border-left: 10px solid transparent;
+  border-right: 90px solid transparent;
+}
+
+.pyramid {
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom: 45px solid #fff;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+}
+
+.py-shadow {
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  left: -50px;
+  border-bottom: 45px solid #dcdcdc;
+  border-left: 50px solid transparent;
+  border-right: 20px solid transparent;
+}
