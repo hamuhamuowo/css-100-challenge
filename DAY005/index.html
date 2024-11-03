@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>day 5</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="frame">
+      <div class="container">
+        <div class="title-container flex-center">
+          <div class="title-left">
+            <span class="big">weekly report</span>
+            <span class="small">28. Oct - 03. Nov</span>
+          </div>
+          <div class="title-right">
+            <span class="small">Revenue</span>
+            <span class="big">$ 3621.79</span>
+          </div>
+        </div>
+        <div class="graph-container">
+          <div class="legend-box flex-center">
+            <div class="legend flex-center">
+              <div class="legend-color red"></div>
+              <span class="legend-title">Views</span>
+            </div>
+            <div class="legend flex-center">
+              <div class="legend-color blue"></div>
+              <span class="legend-title">Purchases</span>
+            </div>
+          </div>
+
+          <div class="graph-box">
+            <div class="line"></div>
+            <div class="line line-bottom"></div>
+            <div class="graph-line-container">
+              <svg class="graph-line">
+                <polyline
+                  points="29,50 70,15 115,25 159,15 199,40 235,50 280,20"
+                  stroke="#ef5b5b"
+                  stroke-width="2"
+                  fill="none"
+                ></polyline>
+                <polyline
+                  points="29,65 70,55 115,68 155,60 195,64 235,74 280,67"
+                  stroke="#5ba2e9"
+                  stroke-width="2"
+                  fill="none"
+                ></polyline>
+              </svg>
+            </div>
+            <div class="points">
+              <div class="point1 red">
+                <div class="tip">458</div>
+              </div>
+              <div class="point2 red">
+                <div class="tip">812</div>
+              </div>
+              <div class="point3 red"><div class="tip">746</div></div>
+              <div class="point4 red"><div class="tip">877</div></div>
+              <div class="point5 red"><div class="tip">517</div></div>
+              <div class="point6 red"><div class="tip">434</div></div>
+              <div class="point7 red"><div class="tip">458</div></div>
+              <div class="point8 blue"><div class="tip">26</div></div>
+              <div class="point9 blue"><div class="tip">41</div></div>
+              <div class="point10 blue"><div class="tip">22</div></div>
+              <div class="point11 blue"><div class="tip">36</div></div>
+              <div class="point12 blue"><div class="tip">25</div></div>
+              <div class="point13 blue"><div class="tip">13</div></div>
+              <div class="point14 blue"><div class="tip">20</div></div>
+            </div>
+            <ul class="days flex-center">
+              <li class="day">mon</li>
+              <li class="day">tue</li>
+              <li class="day">wed</li>
+              <li class="day">thu</li>
+              <li class="day">fri</li>
+              <li class="day">sat</li>
+              <li class="day">sun</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
