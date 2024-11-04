@@ -1,0 +1,155 @@
+:root {
+  --maincolor: #f09319;
+  --subcolor: #abba7c;
+  --fontcolor: #3d5300;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-style: normal;
+  list-style-type: none;
+
+  color: var(--fontcolor);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.frame {
+  width: 400px;
+  height: 400px;
+  background: rgb(67, 189, 102);
+  background: linear-gradient(
+    30deg,
+    rgba(67, 189, 102, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+  border-radius: 4px;
+}
+
+.container {
+  width: 300px;
+  height: 290px;
+  position: relative;
+  background-color: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.section-left,
+.section-right {
+  height: 100%;
+}
+
+.section-left {
+  flex-grow: 1.5;
+}
+
+.section-right {
+  flex-grow: 1;
+}
+
+.pics {
+  position: relative;
+  cursor: pointer;
+  margin: 20px 0;
+}
+
+.circle-one,
+.circle-two {
+  position: absolute;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.pic {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.circle-one {
+  width: 83px;
+  height: 83px;
+  border-radius: 50%;
+  border-color: var(--maincolor) transparent var(--maincolor) transparent;
+}
+
+.circle-two {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border-color: var(--maincolor) transparent var(--maincolor) var(--maincolor);
+}
+
+.big {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.small {
+  font-size: 12px;
+}
+
+.names {
+  margin: 10px 0 20px 0;
+}
+
+.btns {
+  gap: 5px;
+}
+
+.btn button {
+  width: 120px;
+  padding: 8px 20px;
+  border: 1px solid var(--maincolor);
+  cursor: pointer;
+  border-radius: 20px;
+  background-color: #fff;
+  font-size: 12px;
+  transition: 0.3s;
+}
+
+.btn button:hover {
+  background-color: var(--maincolor);
+  color: #fff;
+}
+
+.info-btns {
+  width: 100%;
+  height: 100%;
+  gap: 1px;
+}
+
+.info-btn {
+  width: 100%;
+  flex-grow: 1;
+  background-color: var(--maincolor);
+  transition: 0.5s;
+}
+
+.info-btn:hover {
+  background-color: var(--subcolor);
+  cursor: pointer;
+}
