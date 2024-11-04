@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>day 7</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/cfa7cb40cb.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="frame flex-col">
+      <div class="container flex-col">
+        <ul class="menu flex-row">
+          <li class="menu-icon flex-col">
+            <div class="line-top"></div>
+            <div class="line-circle"></div>
+            <div class="line-bottom"></div>
+          </li>
+          <li class="title"><strong>Notifications</strong></li>
+          <li class="icon"><i class="fa-solid fa-magnifying-glass"></i></li>
+          <li class="search"><input type="text" placeholder="Search ..." /></li>
+        </ul>
+        <div class="line"></div>
+        <ul class="contents flex-col">
+          <li class="content">
+            <div class="circle-time-box flex-row">
+              <div class="circle"></div>
+              <span class="time">9:24 AM</span>
+            </div>
+            <span class="info"
+              ><strong>John Walker</strong> posted a photo on your wall.</span
+            >
+          </li>
+          <li class="content">
+            <div class="circle-time-box flex-row">
+              <div class="circle"></div>
+              <span class="time">8:19 AM</span>
+            </div>
+            <span class="info"
+              ><strong>Alice Parker</strong> commented your last post.</span
+            >
+          </li>
+          <li class="content">
+            <div class="circle-time-box flex-row">
+              <div class="circle"></div>
+              <span class="time">Yesterday</span>
+            </div>
+            <span class="info"
+              ><strong>Luke Wayne</strong> added you as friend.</span
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="back-container">
+        <ul class="back-menu flex-col">
+          <li><i class="fa fa-dashboard"></i><span>Dashboard</span></li>
+          <li><i class="fa fa-user"></i><span>Profile</span></li>
+          <li><i class="fa fa-bell"></i><span>Notifications</span></li>
+          <li><i class="fa fa-comments"></i><span>Messages</span></li>
+          <li><i class="fa fa-gear"></i><span>Settings</span></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
