@@ -1,37 +1,7 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
-
 :root {
-  --maincolor: #58076c;
-  --subcolor: #ffb700;
+  --bg-color: #8452b5;
+  --bubble-color: #ffd500;
 }
-
-* {
-  margin: 0;
-  padding: 0;
-  font-style: normal;
-  list-style-type: none;
-}
-
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.flex-col {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.flex-row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .frame {
   position: absolute;
   top: 50%;
@@ -41,13 +11,9 @@ body {
   margin-top: -200px;
   margin-left: -200px;
   border-radius: 2px;
-  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  background: var(--maincolor);
-  color: #333;
-  font-family: "Open Sans", Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  background: var(--bg-color);
+  filter: contrast(5);
 }
 
 .center {
@@ -57,19 +23,371 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.circle {
-  width: 120px;
-  height: 120px;
+.ball {
+  position: relative;
+  width: 90px;
+  height: 90px;
+  background: var(--bubble-color);
   border-radius: 50%;
-  background-color: var(--subcolor);
+  filter: blur(15px);
 }
 
-.sub-circle-one {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background-color: var(--subcolor);
+.bubble-1 {
   position: absolute;
-  top: -5px;
-  right: -5px;
+  top: 20px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  transform: rotate(146deg);
+}
+.bubble-1:after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 50px;
+  height: 50px;
+  background: var(--bubble-color);
+  border-radius: 50%;
+  transform-origin: 37px 37px;
+  filter: blur(5px);
+}
+
+.bubble-2 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  transform: rotate(184deg);
+}
+.bubble-2:after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 50px;
+  height: 50px;
+  background: var(--bubble-color);
+  border-radius: 50%;
+  transform-origin: 34px 34px;
+  filter: blur(5px);
+}
+
+.bubble-3 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  transform: rotate(103deg);
+}
+.bubble-3:after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 50px;
+  height: 50px;
+  background: var(--bubble-color);
+  border-radius: 50%;
+  transform-origin: 31px 31px;
+  filter: blur(5px);
+}
+
+.bubble-4 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  transform: rotate(17deg);
+}
+.bubble-4:after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 50px;
+  height: 50px;
+  background: var(--bubble-color);
+  border-radius: 50%;
+  transform-origin: 28px 28px;
+  filter: blur(5px);
+}
+
+.bubble-5 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  transform: rotate(142deg);
+}
+.bubble-5:after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 50px;
+  height: 50px;
+  background: var(--bubble-color);
+  border-radius: 50%;
+  transform-origin: 25px 25px;
+  filter: blur(5px);
+}
+
+.bubble-6 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  transform: rotate(236deg);
+}
+.bubble-6:after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 50px;
+  height: 50px;
+  background: var(--bubble-color);
+  border-radius: 50%;
+  transform-origin: 22px 22px;
+  filter: blur(5px);
+}
+
+.bubble-7 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  transform: rotate(285deg);
+}
+.bubble-7:after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 50px;
+  height: 50px;
+  background: var(--bubble-color);
+  border-radius: 50%;
+  transform-origin: 19px 19px;
+  filter: blur(5px);
+}
+
+.bubble-8 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  transform: rotate(75deg);
+}
+.bubble-8:after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 50px;
+  height: 50px;
+  background: var(--bubble-color);
+  border-radius: 50%;
+  transform-origin: 16px 16px;
+  filter: blur(5px);
+}
+
+.sparkle-1 {
+  position: absolute;
+  top: 38px;
+  left: 38px;
+  width: 8px;
+  height: 8px;
+  transform: rotate(162deg);
+}
+.sparkle-1:after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: var(--bubble-color);
+  border-radius: 50%;
+  transform-origin: 58px 58px;
+  filter: blur(3px);
+}
+
+.sparkle-2 {
+  position: absolute;
+  top: 38px;
+  left: 38px;
+  width: 9px;
+  height: 9px;
+  transform: rotate(106deg);
+}
+.sparkle-2:after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 9px;
+  height: 9px;
+  background: var(--bubble-color);
+  border-radius: 50%;
+  transform-origin: 56px 56px;
+  filter: blur(3px);
+}
+
+.sparkle-3 {
+  position: absolute;
+  top: 38px;
+  left: 38px;
+  width: 10px;
+  height: 10px;
+  transform: rotate(171deg);
+}
+.sparkle-3:after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: var(--bubble-color);
+  border-radius: 50%;
+  transform-origin: 54px 54px;
+  filter: blur(3px);
+}
+
+.sparkle-4 {
+  position: absolute;
+  top: 38px;
+  left: 38px;
+  width: 11px;
+  height: 11px;
+  transform: rotate(230deg);
+}
+.sparkle-4:after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 11px;
+  height: 11px;
+  background: var(--bubble-color);
+  border-radius: 50%;
+  transform-origin: 52px 52px;
+  filter: blur(3px);
+}
+
+.sparkle-5 {
+  position: absolute;
+  top: 38px;
+  left: 38px;
+  width: 12px;
+  height: 12px;
+  transform: rotate(241deg);
+}
+.sparkle-5:after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: var(--bubble-color);
+  border-radius: 50%;
+  transform-origin: 50px 50px;
+  filter: blur(3px);
+}
+
+.sparkle-6 {
+  position: absolute;
+  top: 38px;
+  left: 38px;
+  width: 13px;
+  height: 13px;
+  transform: rotate(212deg);
+}
+.sparkle-6:after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 13px;
+  height: 13px;
+  background: var(--bubble-color);
+  border-radius: 50%;
+  transform-origin: 48px 48px;
+  filter: blur(3px);
+}
+
+.sparkle-7 {
+  position: absolute;
+  top: 38px;
+  left: 38px;
+  width: 14px;
+  height: 14px;
+  transform: rotate(11deg);
+}
+.sparkle-7:after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 14px;
+  height: 14px;
+  background: var(--bubble-color);
+  border-radius: 50%;
+  transform-origin: 46px 46px;
+  filter: blur(3px);
+}
+
+.sparkle-8 {
+  position: absolute;
+  top: 38px;
+  left: 38px;
+  width: 15px;
+  height: 15px;
+  transform: rotate(158deg);
+}
+.sparkle-8:after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: var(--bubble-color);
+  border-radius: 50%;
+  transform-origin: 44px 44px;
+  filter: blur(3px);
+}
+
+.sparkle-9 {
+  position: absolute;
+  top: 38px;
+  left: 38px;
+  width: 16px;
+  height: 16px;
+  transform: rotate(46deg);
+}
+.sparkle-9:after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 16px;
+  height: 16px;
+  background: var(--bubble-color);
+  border-radius: 50%;
+  transform-origin: 42px 42px;
+  filter: blur(3px);
+}
+
+.sparkle-10 {
+  position: absolute;
+  top: 38px;
+  left: 38px;
+  width: 17px;
+  height: 17px;
+  transform: rotate(118deg);
+}
+.sparkle-10:after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 17px;
+  height: 17px;
+  background: var(--bubble-color);
+  border-radius: 50%;
+  transform-origin: 40px 40px;
+  filter: blur(3px);
 }
