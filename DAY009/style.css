@@ -1,0 +1,274 @@
+:root {
+  --bg-color: #86b0d7;
+  --forest-color: #237d83;
+  --forest-back-color: #98c4ca;
+  --moon-color: #fff;
+  --moon-inside-color: #f6f6f6;
+}
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  background: var(--bg-color);
+
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+b {
+  font-weight: 400;
+}
+
+.view {
+  flex: 7.5;
+}
+
+.info {
+  background-color: #fff;
+  flex: 2.5;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+  font-weight: 300;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.left h3 {
+  font-size: 36px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.left-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+}
+
+.moon {
+  position: absolute;
+  left: 30px;
+  bottom: 0px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: var(--moon-color);
+}
+
+.moon::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: var(--moon-color);
+  filter: blur(10px);
+}
+
+[class^="circle-"] {
+  border-radius: 50%;
+  background-color: var(--moon-inside-color);
+  position: absolute;
+}
+
+.circle-1 {
+  width: 10px;
+  height: 10px;
+  top: 10px;
+  left: 50px;
+}
+.circle-2 {
+  width: 40px;
+  height: 40px;
+  top: 50px;
+  left: 20px;
+}
+.circle-3 {
+  width: 5px;
+  height: 5px;
+  top: 10px;
+  left: 70px;
+}
+.circle-4 {
+  width: 5px;
+  height: 5px;
+  top: 30px;
+  left: 60px;
+}
+.circle-5 {
+  width: 15px;
+  height: 15px;
+  top: 30px;
+  left: 20px;
+}
+.circle-6 {
+  width: 5px;
+  height: 5px;
+  top: 10px;
+  left: 30px;
+}
+.circle-7 {
+  width: 20px;
+  height: 20px;
+  top: 42px;
+  left: 72px;
+}
+
+.back .forest {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  bottom: -150px;
+  background-color: var(--forest-back-color);
+}
+
+.back .forest:nth-child(1) {
+  left: -65px;
+}
+
+.back .forest:nth-child(2) {
+  right: -124px;
+}
+
+.front .forest {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  bottom: -80px;
+  border-radius: 50%;
+  background-color: var(--forest-color);
+}
+
+.front .forest:nth-child(1) {
+  left: -100px;
+}
+.front .forest:nth-child(2) {
+  width: 320px;
+  height: 320px;
+  left: 60px;
+  bottom: -130px;
+}
+.front .forest:nth-child(3) {
+  right: -130px;
+  bottom: -100px;
+}
+
+.snow * {
+  position: absolute;
+  z-index: 6;
+  transform: translate3d(89px, -310px, 0) rotate(0deg) scaleX(0.7);
+  bottom: 95px;
+}
+
+.snow *:after {
+  content: "";
+  display: block;
+  background: #fff;
+  border-radius: 50%;
+  transform: rotate(0deg);
+}
+
+.snow.big :nth-child(1) {
+  left: -20px;
+}
+.snow.big :after {
+  width: 12px;
+  height: 12px;
+}
+
+.snow.big :nth-child(2) {
+  left: 52px;
+}
+
+.snow.big :nth-child(3) {
+  left: 102px;
+}
+
+.snow.big :nth-child(4) {
+  left: 142px;
+}
+
+.snow.big :nth-child(5) {
+  left: 185px;
+}
+
+.snow.big :nth-child(6) {
+  left: 245px;
+}
+
+.snow.big :nth-child(7) {
+  left: 300px;
+}
+
+.snow.middle :nth-child(1) {
+  left: 34px;
+}
+.snow.middle ::after {
+  width: 8px;
+  height: 8px;
+}
+
+.snow.middle :nth-child(2) {
+  left: 64px;
+}
+.snow.middle :nth-child(3) {
+  left: 104px;
+}
+.snow.middle :nth-child(4) {
+  left: 164px;
+}
+.snow.middle :nth-child(5) {
+  left: 182px;
+}
+.snow.middle :nth-child(6) {
+  left: 204px;
+}
+.snow.middle :nth-child(7) {
+  left: 329px;
+}
+
+.snow.small :nth-child(1) {
+  left: 64px;
+}
+.snow.small ::after {
+  width: 3px;
+  height: 3px;
+}
+
+.snow.small :nth-child(2) {
+  left: 104px;
+}
+.snow.small :nth-child(3) {
+  left: 144px;
+}
+.snow.small :nth-child(4) {
+  left: 214px;
+}
+.snow.small :nth-child(5) {
+  left: 264px;
+}
+.snow.small :nth-child(6) {
+  left: 324px;
+}
