@@ -1,0 +1,105 @@
+:root {
+  --bg-color: #4d4442;
+  --watch-color: #2b1f18;
+  --watch-line-color: #453a3a;
+  --font-color: #fff;
+  --point-color: #df5353;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  background: var(--bg-color);
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.watch {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  border: 8px solid var(--watch-line-color);
+  background-color: var(--watch-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info {
+  text-transform: uppercase;
+  color: var(--font-color);
+  text-align: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.info svg:nth-child(1) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 92%;
+  height: 92%;
+  border-radius: 50%;
+}
+.info svg:nth-child(2) {
+  position: absolute;
+  width: 98%;
+  height: 98%;
+  border-radius: 50%;
+  transform: rotate(-90deg);
+  transform-origin: center;
+}
+
+.info svg:nth-child(1) circle {
+  fill: none;
+  stroke: var(--font-color);
+  stroke-width: 0.1;
+  stroke-dasharray: 1, 3;
+}
+.info svg:nth-child(2) circle {
+  fill: none;
+  stroke: var(--point-color);
+  stroke-width: 1.2;
+}
+.info .big {
+  font-size: 42px;
+}
+
+.info .small {
+  font-size: 12px;
+  font-weight: 300;
+}
+.top {
+  margin-bottom: -5px;
+}
+
+.bottom {
+  margin-top: -10px;
+}
+
+.bottom i {
+  color: var(--point-color);
+  margin-right: 2px;
+}
