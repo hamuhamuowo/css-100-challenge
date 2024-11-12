@@ -1,0 +1,197 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+:root {
+  --main-color: #fff7d1;
+  --sub-color: #ffd09b;
+  --point-color: #ffb0b0;
+}
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  position: relative;
+}
+
+.pic {
+  position: relative;
+  background-color: #000;
+  margin: 3px;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+
+.pic:nth-child(1) {
+  background-image: url(https://images.unsplash.com/photo-1497752531616-c3afd9760a11?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+.pic:nth-child(2) {
+  background-image: url(https://images.unsplash.com/reserve/iZkDQMqeQlqhoCIywoFv_6005485056_c8622e0824_o.jpg?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+.pic:nth-child(3) {
+  background-image: url(https://images.unsplash.com/photo-1497122123454-d63853ca2d39?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+.pic:nth-child(4) {
+  background-image: url(https://images.unsplash.com/photo-1496196614460-48988a57fccf?q=80&w=3474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+.btn-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  display: none;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background-color: var(--main-color);
+  cursor: pointer;
+  opacity: 0;
+}
+
+.btn i {
+  color: var(--point-color);
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.profile-box {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.profile-close-btn {
+  position: absolute;
+  top: -80px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--point-color);
+  font-weight: 600;
+  background-color: var(--main-color);
+  cursor: pointer;
+  z-index: 6;
+  transition: 0.3s;
+}
+
+.profile-close-btn:hover {
+  background-color: var(--point-color);
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+}
+
+.profile-pic {
+  position: absolute;
+  top: -200px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #fff;
+  background-image: url(https://images.unsplash.com/photo-1425082661705-1834bfd09dca?q=80&w=3552&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-position: center;
+  border: 2px solid #fff;
+  z-index: 6;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.profile-top,
+.profile-bottom {
+  width: 100%;
+  height: 50%;
+  position: absolute;
+}
+
+.profile-top {
+  top: -200px;
+  background-color: var(--point-color);
+}
+
+.profile-bottom {
+  bottom: -200px;
+  background-color: var(--main-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--point-color);
+}
+
+.name {
+  display: inline-block;
+  margin: 30px 0;
+  font-weight: 600;
+}
+
+.profile-btn-box {
+  display: flex;
+  gap: 40px;
+}
+
+.profile-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid var(--point-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  cursor: pointer;
+  transition: ease 0.3s;
+}
+
+.profile-btn:hover {
+  background-color: var(--point-color);
+  color: var(--main-color);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
