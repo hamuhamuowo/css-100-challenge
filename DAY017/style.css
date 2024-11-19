@@ -1,0 +1,96 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+:root {
+  --bg-color: #cb9df0;
+  --point-color1: #fddbbb;
+  --point-color2: #c9e6f0;
+  --dark-color: #f0c1e1;
+}
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.bg {
+  position: relative;
+  top: -130px;
+  left: -120px;
+
+  width: 600px;
+  background: #fff;
+  z-index: 1;
+  transform: rotate(45deg);
+}
+
+.stripe {
+  width: 600px;
+  height: 30px;
+  border-bottom: 3px solid var(--bg-color);
+}
+
+.wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 250px;
+  background-color: var(--bg-color);
+  z-index: 3;
+  border-radius: 3px;
+}
+
+.one {
+  width: 40px;
+  height: 100px;
+  background-color: var(--point-color);
+}
+
+.polygon {
+  position: absolute;
+  width: 160px;
+  height: 140px;
+  top: 50px;
+  left: 45px;
+}
+
+.middle,
+.light,
+.dark {
+  transition: all 0.5s ease-in-out;
+}
+
+.middle {
+  fill: var(--point-color1);
+}
+
+.light {
+  fill: var(--point-color2);
+}
+
+.dark {
+  fill: var(--dark-color);
+}
+
+.polygon:hover .light {
+  fill: var(--point-color1);
+}
+.polygon:hover .middle {
+  fill: var(--point-color2);
+}
+.polygon:hover .dark {
+  fill: var(--dark-color);
+}
